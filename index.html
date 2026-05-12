@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Profile/profile1-removebg.png">
+  <title>Vinay — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800;900&family=Clash+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Clash Display via CDN -->
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Animated BG ─────────────────────────────────────────── -->
+<div class="site-bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<header class="glass-nav">
+  <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center gap-3">
+
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-text">VINAY</span>
+      <span class="nav-logo-accent">SHAH</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden md:flex items-center gap-1">
+      <a href="#about"     class="nav-link">About</a>
+      <a href="#skills"    class="nav-link">Skills</a>
+      <a href="#projects"  class="nav-link">Projects</a>
+      <a href="#portfolio" class="nav-link">Certificates</a>
+      <a href="#contact"   class="nav-link">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <!-- Theme toggle -->
+      <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle dark/light mode">
+        <i data-lucide="sun"  id="theme-icon-sun"  class="h-4 w-4 hidden"></i>
+        <i data-lucide="moon" id="theme-icon-moon" class="h-4 w-4"></i>
+      </button>
+      <!-- Hamburger -->
+      <button id="hamburger" class="icon-btn md:hidden" aria-label="Open menu">
+        <i data-lucide="menu" class="h-4 w-4"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-3 pt-1 space-y-1 border-t border-white/5">
+    <a href="#about"     class="block py-2 px-4 rounded-lg nav-link">About</a>
+    <a href="#skills"    class="block py-2 px-4 rounded-lg nav-link">Skills</a>
+    <a href="#projects"  class="block py-2 px-4 rounded-lg nav-link">Projects</a>
+    <a href="#portfolio" class="block py-2 px-4 rounded-lg nav-link">Certificates</a>
+    <a href="#contact"   class="block py-2 px-4 rounded-lg nav-link">Contact</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ── HERO ────────────────────────────────────────────────── -->
+<section id="home" class="hero-section">
+  <div class="container mx-auto text-center">
+
+    <!-- Profile -->
+    <div class="profile-ring w-36 h-36 md:w-44 md:h-44 mx-auto mb-8 reveal">
+      <div class="profile-ring-inner w-full h-full">
+        <img src="Profile/profile2.png" alt="Vinay Shah">
+      </div>
+    </div>
+
+    <!-- Role badge -->
+    <div class="role-badge mx-auto mb-4 reveal" id="role-badge">
+      <i data-lucide="sparkles" class="h-3 w-3"></i>
+      <span id="role-text">CSE-AIML Student</span>
+    </div>
+
+    <!-- Typing title -->
+    <h1 class="hero-title mb-5 reveal" id="hero-title">
+      <span id="typed-name"></span><span class="typing-cursor">|</span>
+    </h1>
+
+    <p class="text-slate-400 max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed reveal">
+      Building smart, data-driven applications with Python &amp; Web Technologies.<br>
+      Salesforce Intern · AI/ML Enthusiast · Open Source Developer
+    </p>
+
+    <!-- CTA -->
+    <div class="flex flex-wrap justify-center gap-3 mb-14 reveal">
+      <a href="#projects" class="btn btn-primary">
+        <i data-lucide="folder-open" class="h-4 w-4"></i>View Projects
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <i data-lucide="mail" class="h-4 w-4"></i>Contact Me
+      </a>
+      <a href="https://github.com/RootSyntax-Dev" target="_blank" class="btn btn-secondary">
+        <i data-lucide="github" class="h-4 w-4"></i>GitHub
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-md sm:max-w-xl mx-auto stagger reveal">
+      <div class="stat-box"><div class="stat-num text-indigo-400">4+</div><div class="stat-lbl">Projects</div></div>
+      <div class="stat-box"><div class="stat-num text-purple-400">5+</div><div class="stat-lbl">Certificates</div></div>
+      <div class="stat-box"><div class="stat-num text-cyan-400">1</div><div class="stat-lbl">Internship</div></div>
+      <div class="stat-box"><div class="stat-num text-pink-400">18+</div><div class="stat-lbl">Yrs Learning</div></div>
+    </div>
+  </div>
+
+  <!-- <div class="scroll-hint">
+    <span>scroll</span>
+    <i data-lucide="chevron-down" class="h-4 w-4"></i>
+  </div> -->
+</section>
+
+<!-- ── ABOUT ───────────────────────────────────────────────── -->
+<section id="about" class="section-wrap">
+  <div class="container mx-auto">
+    <div class="mb-10 reveal">
+      <div class="section-eyebrow"><i data-lucide="user" class="h-3 w-3"></i>About Me</div>
+      <h2 class="section-title">Who Am I?</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="about-card reveal">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+
+        <!-- Bio -->
+        <div class="md:col-span-2 space-y-4">
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Hey! I'm <span class="text-indigo-400 font-semibold">Vinay Kumar Shah</span>, a passionate
+            <span class="text-purple-400 font-semibold">B.Tech CSE-AIML</span> student at
+            Lakshmi Narain College of Technology, Bhopal (2023–2026). I love turning ideas
+            into real-world software using Python, AI/ML, and web technologies.
+          </p>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            I completed a <span class="text-yellow-400 font-semibold">Salesforce Developer Virtual Internship</span>
+            via SmartBridge &amp; AICTE (May–July 2025), working with Apex, LWC, SOQL, and Flow automation.
+            I earned the <span class="text-pink-400 font-semibold">AgentBlazer Champion</span> certificate on completion.
+          </p>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            My projects include <span class="text-blue-400 font-semibold">JarvisX</span> (Python voice assistant),
+            <span class="text-green-400 font-semibold">ProxiFind</span> (location-based map app), Beatify, and more.
+            I believe in building things that actually solve problems.
+          </p>
+
+          <!-- Education -->
+          <div class="mt-5 space-y-3">
+            <p class="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-3">Education</p>
+            <div class="about-tag">
+              <i data-lucide="graduation-cap" class="h-4 w-4 text-indigo-400 flex-shrink-0"></i>
+              <div>
+                <div class="text-sm font-semibold text-white">B.Tech — CSE-AIML, LNCT Bhopal</div>
+                <div class="text-xs text-slate-400">2023 – 2026</div>
+              </div>
+            </div>
+            <div class="about-tag">
+              <i data-lucide="book" class="h-4 w-4 text-purple-400 flex-shrink-0"></i>
+              <div>
+                <div class="text-sm font-semibold text-white">Diploma — Cement Technology, Govt Polytechnic College Satna</div>
+                <div class="text-xs text-slate-400">2019 – 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick facts -->
+        <div class="space-y-2.5">
+          <p class="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-3">Quick Info</p>
+          <div class="about-tag"><i data-lucide="map-pin" class="h-4 w-4 text-pink-400 flex-shrink-0"></i><span class="text-sm text-slate-300">Bhopal, Madhya Pradesh</span></div>
+          <div class="about-tag"><i data-lucide="house" class="h-4 w-4 text-pink-400 flex-shrink-0"></i><span class="text-sm text-slate-300">Singrauli, Madhya Pradesh</span></div>
+          <div class="about-tag"><i data-lucide="graduation-cap" class="h-4 w-4 text-pink-400 flex-shrink-0"></i><span class="text-sm text-slate-300">Bachelor of Technology</span></div>
+          <div class="about-tag"><i data-lucide="briefcase" class="h-4 w-4 text-green-400 flex-shrink-0"></i><span class="text-sm text-slate-300">Salesforce Virtual Intern (SmartBridge)</span></div>
+          <div class="about-tag"><i data-lucide="brain" class="h-4 w-4 text-cyan-400 flex-shrink-0"></i><span class="text-sm text-slate-300">AI/ML + Python Focus</span></div>
+          <div class="about-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <a href="https://github.com/RootSyntax-Dev" target="_blank" class="text-sm text-slate-300 hover:none">GitHub</a>
+          </div>
+          <div class="about-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://linkedin.com/in/vinay-py-dev" target="_blank" class="text-sm text-slate-300 hover:none">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ──────────────────────────────────────────────── -->
+<section id="skills" class="section-wrap">
+  <div class="container mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="section-eyebrow mx-auto" style="width:fit-content"><i data-lucide="code-2" class="h-3 w-3"></i>Skills</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-rule mx-auto"></div>
+    </div>
+
+    <div class="grid gap-5 max-w-5xl mx-auto">
+      <div class="skills-group reveal">
+        <div class="group-lbl text-indigo-400">🧑‍💻 Languages</div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 stagger">
+          <div class="skill-card"><i data-lucide="code"      class="mx-auto mb-2 h-8 w-8 text-indigo-400"></i><p class="font-semibold text-sm text-white">Python</p></div>
+          <div class="skill-card"><i data-lucide="coffee"    class="mx-auto mb-2 h-8 w-8 text-orange-400"></i><p class="font-semibold text-sm text-white">Core Java</p></div>
+          <div class="skill-card"><i data-lucide="file-code" class="mx-auto mb-2 h-8 w-8 text-yellow-400"></i><p class="font-semibold text-sm text-white">JavaScript</p></div>
+          <div class="skill-card"><i data-lucide="globe"     class="mx-auto mb-2 h-8 w-8 text-blue-400"></i><p class="font-semibold text-sm text-white">HTML / CSS</p></div>
+        </div>
+      </div>
+      <div class="skills-group reveal">
+        <div class="group-lbl text-purple-400">☁️ Cloud & Platforms</div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 stagger">
+          <div class="skill-card"><i data-lucide="cloud"     class="mx-auto mb-2 h-8 w-8 text-orange-400"></i><p class="font-semibold text-sm text-white">AWS Cloud</p></div>
+          <div class="skill-card"><i data-lucide="cloud-cog" class="mx-auto mb-2 h-8 w-8 text-blue-400"></i><p class="font-semibold text-sm text-white">Salesforce</p></div>
+          <div class="skill-card"><i data-lucide="zap"       class="mx-auto mb-2 h-8 w-8 text-indigo-400"></i><p class="font-semibold text-sm text-white">Apex / LWC</p></div>
+        </div>
+      </div>
+      <div class="skills-group reveal">
+        <div class="group-lbl text-green-400">🤖 AI / ML & Data</div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 stagger">
+          <div class="skill-card"><i data-lucide="brain"      class="mx-auto mb-2 h-8 w-8 text-green-400"></i><p class="font-semibold text-sm text-white">Machine Learning</p></div>
+          <div class="skill-card"><i data-lucide="bot"        class="mx-auto mb-2 h-8 w-8 text-emerald-400"></i><p class="font-semibold text-sm text-white">AI Fundamentals</p></div>
+          <div class="skill-card"><i data-lucide="database"   class="mx-auto mb-2 h-8 w-8 text-sky-400"></i><p class="font-semibold text-sm text-white">MySQL / SQL</p></div>
+          <div class="skill-card"><i data-lucide="bar-chart-2" class="mx-auto mb-2 h-8 w-8 text-yellow-400"></i><p class="font-semibold text-sm text-white">Power BI</p></div>
+        </div>
+      </div>
+      <div class="skills-group reveal">
+        <div class="group-lbl text-pink-400">🛠️ Tools & IDEs</div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 stagger">
+          <div class="skill-card"><i data-lucide="git-branch" class="mx-auto mb-2 h-8 w-8 text-orange-400"></i><p class="font-semibold text-sm text-white">Git / GitHub</p></div>
+          <div class="skill-card"><i data-lucide="code-2"     class="mx-auto mb-2 h-8 w-8 text-blue-400"></i><p class="font-semibold text-sm text-white">VS Code</p></div>
+          <div class="skill-card"><i data-lucide="book-open"  class="mx-auto mb-2 h-8 w-8 text-orange-300"></i><p class="font-semibold text-sm text-white">Jupyter Notebook</p></div>
+          <div class="skill-card"><i data-lucide="table-2"    class="mx-auto mb-2 h-8 w-8 text-green-400"></i><p class="font-semibold text-sm text-white">MS Excel</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ────────────────────────────────────────────── -->
+<section id="projects" class="section-wrap">
+  <div class="container mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="section-eyebrow mx-auto" style="width:fit-content"><i data-lucide="folder" class="h-3 w-3"></i>Projects</div>
+      <h2 class="section-title">My Projects</h2>
+      <div class="section-rule mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="project-card p-6 flex flex-col reveal">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="icon-box"><i data-lucide="users" class="h-5 w-5 text-yellow-400"></i></div>
+          <h3 class="text-base font-bold text-white">Student Management System</h3>
+        </div>
+        <p class="text-slate-400 text-sm mb-4 flex-grow leading-relaxed">Responsive web app to add, edit, delete and sort student records with a modern UI and search functionality.</p>
+        <div class="flex flex-wrap gap-1.5 mb-5"><span class="tag tag-yellow">JavaScript</span><span class="tag tag-blue">HTML</span><span class="tag tag-pink">CSS</span></div>
+        <div class="flex gap-2 mt-auto">
+          <a href="https://github.com/RootSyntax-Dev/Student-Management" target="_blank" class="proj-btn flex-1"><i data-lucide="github" class="h-3.5 w-3.5"></i>GitHub</a>
+          <button onclick="openProjectModal('Student Management System',['Project video and SRC/student 1.png','Project video and SRC/student 2.png','Project video and SRC/student 3.png'],null)" class="proj-btn proj-btn-accent flex-1"><i data-lucide="eye" class="h-3.5 w-3.5"></i>Preview</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card p-6 flex flex-col reveal">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="icon-box"><i data-lucide="music" class="h-5 w-5 text-pink-400"></i></div>
+          <h3 class="text-base font-bold text-white">Beatify — Music Player</h3>
+        </div>
+        <p class="text-slate-400 text-sm mb-4 flex-grow leading-relaxed">Sleek music player web app with a beautiful, intuitive interface and smooth playback experience.</p>
+        <div class="flex flex-wrap gap-1.5 mb-5"><span class="tag tag-blue">HTML</span><span class="tag tag-yellow">JavaScript</span><span class="tag tag-pink">CSS</span></div>
+        <div class="flex gap-2 mt-auto">
+          <a href="https://github.com/RootSyntax-Dev/Beatify" target="_blank" class="proj-btn flex-1"><i data-lucide="github" class="h-3.5 w-3.5"></i>GitHub</a>
+          <button onclick="openProjectModal('Beatify',['Project video and SRC/Beatify 1.png','Project video and SRC/Beatify 2.png','Project video and SRC/Beatify 3.png'],'Project video and SRC/Beatify Working view.mp4')" class="proj-btn proj-btn-accent flex-1"><i data-lucide="eye" class="h-3.5 w-3.5"></i>Preview</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card p-6 flex flex-col reveal">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="icon-box"><i data-lucide="map-pin" class="h-5 w-5 text-green-400"></i></div>
+          <h3 class="text-base font-bold text-white">ProxiFind</h3>
+        </div>
+        <p class="text-slate-400 text-sm mb-4 flex-grow leading-relaxed">Location-based web app to discover nearby places using real-time geolocation and an interactive Leaflet map with turn-by-turn routing.</p>
+        <div class="flex flex-wrap gap-1.5 mb-5"><span class="tag tag-blue">HTML</span><span class="tag tag-yellow">JavaScript</span><span class="tag tag-pink">CSS</span><span class="tag tag-green">Geolocation API</span></div>
+        <div class="flex gap-2 mt-auto">
+          <a href="https://github.com/RootSyntax-Dev/ProxiFind" target="_blank" class="proj-btn flex-1"><i data-lucide="github" class="h-3.5 w-3.5"></i>GitHub</a>
+          <button onclick="openProjectModal('ProxiFind',['Project video and SRC/PC-Dashboard/Bhopal-junction-Dark.png','Project video and SRC/PC-Dashboard/Bhopal-junction-Light.png','Project video and SRC/PC-Dashboard/Categories-Filter.png','Project video and SRC/PC-Dashboard/Indore-airport-Dark.png','Project video and SRC/PC-Dashboard/Indore-airport-Light.png','Project video and SRC/PC-Dashboard/Marine-Drive-Dark.png','Project video and SRC/PC-Dashboard/Marine-Drive-Light.png','Project video and SRC/PC-Dashboard/Places-Card.png','Project video and SRC/Mobile-Dashboard/Bangaluru-Dark.png','Project video and SRC/Mobile-Dashboard/Bangaluru-dark2.png','Project video and SRC/Mobile-Dashboard/Bangaluru-Light.png','Project video and SRC/Mobile-Dashboard/Bangaluru-Light2.png','Project video and SRC/Mobile-Dashboard/GPS-Location-Dark.png','Project video and SRC/Mobile-Dashboard/GPS-Location-Light.png','Project video and SRC/Mobile-Dashboard/Marine-Drive-Dark.png','Project video and SRC/Mobile-Dashboard/Marine-Drive-Light.png','Project video and SRC/Mobile-Dashboard/Places-Card-Light.png'],null)" class="proj-btn proj-btn-accent flex-1"><i data-lucide="eye" class="h-3.5 w-3.5"></i>Preview</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card p-6 flex flex-col reveal">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="icon-box"><i data-lucide="mic" class="h-5 w-5 text-purple-400"></i></div>
+          <h3 class="text-base font-bold text-white">JarvisX — Voice Assistant</h3>
+        </div>
+        <p class="text-slate-400 text-sm mb-4 flex-grow leading-relaxed">Desktop Python voice assistant with Tkinter GUI. Speech recognition, offline command processing, app launching, and Google search via voice.</p>
+        <div class="flex flex-wrap gap-1.5 mb-5"><span class="tag tag-blue">Python</span><span class="tag tag-purple">Speech Recognition</span><span class="tag tag-orange">Tkinter GUI</span><span class="tag tag-green">pyttsx3</span></div>
+        <div class="flex gap-2 mt-auto">
+          <a href="https://github.com/RootSyntax-Dev/JarvisX" target="_blank" class="proj-btn flex-1"><i data-lucide="github" class="h-3.5 w-3.5"></i>GitHub</a>
+          <button onclick="openProjectModal('JarvisX',['Project video and SRC/JarvisX 1.png','Project video and SRC/JarvisX 2.png','Project video and SRC/JarvisX 3.png'],'Project video and SRC/JarvisX Working view.mp4')" class="proj-btn proj-btn-accent flex-1"><i data-lucide="eye" class="h-3.5 w-3.5"></i>Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATES ────────────────────────────────────────── -->
+<section id="portfolio" class="section-wrap">
+  <div class="container mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="section-eyebrow mx-auto" style="width:fit-content"><i data-lucide="award" class="h-3 w-3"></i>Certifications</div>
+      <h2 class="section-title">Certifications &amp; Internships</h2>
+      <div class="section-rule mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="cert-card reveal" onclick="openModal('Salesforce Developer With Agentblazer Champion','Salesforce | SmartBridge | AICTE','8-week virtual internship with Apex, LWC, SOQL & Salesforce automation using Flow. Earned AgentBlazer Champion on completion.','Issued: August 01, 2025','Certificates/Agentblazer Champion Certificate.jpg')">
+        <img src="https://placehold.co/600x380/1D4ED8/FFFFFF?text=Salesforce" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-blue">Salesforce | SmartBridge</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">Salesforce Developer</h3><p class="text-xs text-slate-400 mb-2">Apex, LWC, Flow — AgentBlazer Champion</p><p class="text-xs text-slate-500">Issued: August 01, 2025</p></div>
+      </div>
+      <div class="cert-card reveal" onclick="openModal('AWS Academy Cloud Foundations','AWS Academy','20-hour course covering cloud concepts, core services, security, architecture, and pricing.','Issued: July 14, 2025','Certificates/AWS Cloud Foundations Certificate.jpg')">
+        <img src="https://placehold.co/600x380/FF9900/FFFFFF?text=AWS" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-orange">AWS Academy</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">AWS Cloud Foundations</h3><p class="text-xs text-slate-400 mb-2">Cloud concepts, services, security & pricing</p><p class="text-xs text-slate-500">Issued: July 14, 2025</p></div>
+      </div>
+      <div class="cert-card reveal" onclick="openModal('Data Analytics Internship','LearnNex | Wipro DICE ID','30-hour practical training and internship in Data Analytics.','Period: Sep 2024 – Nov 2024','Certificates/Wipro internship Certificate.jpg')">
+        <img src="https://placehold.co/600x380/0055A4/FFFFFF?text=Wipro" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-blue">LearnNex | Wipro</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">Data Analytics Internship</h3><p class="text-xs text-slate-400 mb-2">30-hour practical internship in Data Analytics</p><p class="text-xs text-slate-500">Sep 2024 – Nov 2024</p></div>
+      </div>
+      <div class="cert-card reveal" onclick="openModal('Python Programming Series','Infosys Springboard','3-part course: Python Basics, Part 1 & Part 2 — from basics to advanced fundamentals.','Issued: February 14, 2025','Certificates/Certificate Basic of Python.jpg')">
+        <img src="https://placehold.co/600x380/007BFF/FFFFFF?text=Infosys" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-blue">Infosys Springboard</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">Python Programming</h3><p class="text-xs text-slate-400 mb-2">3-part series: Basics, Part 1 &amp; Part 2</p><p class="text-xs text-slate-500">Issued: February 14, 2025</p></div>
+      </div>
+      <div class="cert-card reveal" onclick="openModal('Cybersecurity & Networking','Cisco Networking Academy','Certifications in Cybersecurity (Intro & Essentials) and Networking Essentials via LNCT.','Completed: July–Aug 2025','Certificates/Cisco Networking Essential Certificate.jpg')">
+        <img src="https://placehold.co/600x380/004C97/FFFFFF?text=Cisco" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-blue">Cisco Networking Academy</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">Cybersecurity &amp; Networking</h3><p class="text-xs text-slate-400 mb-2">Intro, Essentials &amp; Networking Essentials</p><p class="text-xs text-slate-500">July–Aug 2025</p></div>
+      </div>
+      <div class="cert-card reveal" onclick="openModal('Core Java Project: YumExpress','Sharma Computer Academy','Workshop on YumExpress (Food Ordering App) using Core Java (JSE).','Issued: January 10, 2024','Certificates/Core Java JSE Project Certificate.jpg')">
+        <img src="https://placehold.co/600x380/E33D31/FFFFFF?text=Java" class="w-full h-40 object-cover">
+        <div class="p-5"><span class="cert-badge cert-badge-red">Sharma Computer Academy</span><h3 class="text-sm font-bold mt-3 mb-1 text-white">Core Java Project</h3><p class="text-xs text-slate-400 mb-2">YumExpress — Food App in Core Java</p><p class="text-xs text-slate-500">Issued: January 10, 2024</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────────────────────── -->
+<section id="contact" class="section-wrap">
+  <div class="container mx-auto">
+    <div class="text-center mb-10 reveal">
+      <div class="section-eyebrow mx-auto" style="width:fit-content"><i data-lucide="send" class="h-3 w-3"></i>Contact</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-rule mx-auto"></div>
+    </div>
+    <div class="contact-card max-w-lg mx-auto reveal">
+      <p class="text-center text-slate-400 text-sm mb-8">Open to opportunities, collabs &amp; interesting projects. Let's build something awesome!</p>
+      <div class="space-y-3">
+        <a href="mailto:vinayshahwal2003@gmail.com" class="contact-row"><i data-lucide="mail"  class="h-5 w-5 text-red-400 mr-3 flex-shrink-0"></i><span>Email</span></a>
+        <a href="https://wa.me/7987627055" target="_blank" class="contact-row"><i data-lucide="message-circle" class="h-5 w-5 text-green-400 mr-3 flex-shrink-0"></i><span>WhatsApp</span></a>
+        <a href="https://www.linkedin.com/in/vinay-py-dev" target="_blank" class="contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 flex-shrink-0"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/RootSyntax-Dev" target="_blank" class="contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 flex-shrink-0"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer class="glass-footer py-6">
+  <div class="container mx-auto text-center text-slate-500 text-xs">
+    <p>&copy; 2026 all rights reserved <span class="text-indigo-400 font-semibold">Vinay Shah</span>. Crafted with ❤️</p>
+  </div>
+</footer>
+
+<!-- ── CERT MODAL ──────────────────────────────────────────── -->
+<div id="portfolio-modal" class="modal-overlay hidden" onclick="closeModal()">
+  <div class="glass-modal max-w-3xl w-full max-h-[88vh] flex flex-col md:flex-row overflow-hidden" onclick="event.stopPropagation()">
+    <div class="w-full md:w-1/2 bg-black/20 p-4 flex-shrink-0">
+      <img id="modal-img" src="" alt="Certificate" class="w-full h-full object-contain rounded-xl">
+    </div>
+    <div class="w-full md:w-1/2 p-7 flex flex-col">
+      <div class="flex-grow">
+        <h3 id="modal-title" class="text-lg font-bold mb-1 text-white"></h3>
+        <p id="modal-issuer" class="text-xs font-semibold text-indigo-400 mb-3"></p>
+        <p id="modal-description" class="text-slate-300 text-sm leading-relaxed mb-3"></p>
+      </div>
+      <div>
+        <p id="modal-date" class="text-xs text-slate-500 mb-4"></p>
+        <button onclick="closeModal()" class="btn btn-secondary w-full justify-center">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROJECT MODAL ───────────────────────────────────────── -->
+<div id="project-modal" class="modal-overlay hidden" onclick="closeProjectModal()">
+  <div class="glass-modal max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden" onclick="event.stopPropagation()">
+    <div class="px-6 py-4 border-b border-white/10 flex justify-between items-center flex-shrink-0">
+      <h3 id="project-modal-title" class="font-bold text-white"></h3>
+      <button onclick="closeProjectModal()" class="icon-btn"><i data-lucide="x" class="h-4 w-4"></i></button>
+    </div>
+    <div class="p-6 overflow-y-auto">
+      <div id="project-modal-video-container" class="mb-5 rounded-xl overflow-hidden hidden">
+        <video id="project-modal-video" class="w-full rounded-xl" controls></video>
+      </div>
+      <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-4">Screenshots</p>
+      <div id="project-modal-screenshots" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
