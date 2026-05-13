@@ -26,7 +26,7 @@
 
 ## 🌐 Live Demo
 
-🔗 [Add your deployed portfolio URL here]
+🔗 [https://rootsyntax-dev.github.io/Portfolio/]
 
 ---
 
