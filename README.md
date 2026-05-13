@@ -26,7 +26,7 @@
 
 ## 🌐 Live Demo
 
-🔗 [https://rootsyntax-dev.github.io/Portfolio/]
+🔗 <a href="https://rootsyntax-dev.github.io/Portfolio/">Visit Website</a>
 
 ---
 
