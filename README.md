@@ -109,7 +109,7 @@ git clone https://github.com/RootSyntax-Dev/Portfolio.git
 cd Portfolio
 ```
 
-# 📁 Folder Structure
+## 📁 Folder Structure
 ```bash
 Portfolio/
 ├── index.html
@@ -121,10 +121,10 @@ Portfolio/
 └── Certificates/
 ```
 
-# 📬 Contact
+## 📬 Contact
 
-💻 GitHub: https://github.com/RootSyntax-Dev
-🔗 LinkedIn: https://linkedin.com/in/vinay-py-dev
+### 💻 GitHub: https://github.com/RootSyntax-Dev
+### 🔗 LinkedIn: https://linkedin.com/in/vinay-py-dev
 ---
 
 
