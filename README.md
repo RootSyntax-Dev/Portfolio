@@ -107,8 +107,10 @@
 ```bash
 git clone https://github.com/RootSyntax-Dev/Portfolio.git
 cd Portfolio
+```
 
 📁 Folder Structure
+```bash
 Portfolio/
 ├── index.html
 ├── style.css
@@ -117,10 +119,13 @@ Portfolio/
 ├── Project UI/
 ├── Project video and SRC/
 └── Certificates/
+```
 
 📬 Contact
-📧 Email: vinayshahwal2003@gmail.com
+```bash
 💻 GitHub: https://github.com/RootSyntax-Dev
 🔗 LinkedIn: https://linkedin.com/in/vinay-py-dev
+```
 
+```bash
 <p align="center"> <strong>Made with ❤️ by Vinay Shah</strong> <br> <em>© 2026 All Rights Reserved</em> </p> ```
