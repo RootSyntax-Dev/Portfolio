@@ -120,11 +120,6 @@ Portfolio/
 ├── Project video and SRC/
 └── Certificates/
 ```
-
-## 📬 Contact
-
-### 💻 GitHub: https://github.com/RootSyntax-Dev
-### 🔗 LinkedIn: https://linkedin.com/in/vinay-py-dev
 ---
 
 
