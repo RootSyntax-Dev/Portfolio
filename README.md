@@ -72,7 +72,7 @@
 
 ## ☀️ Light Mode
 
-| Hero | About | Projects | Contact |
+| Hero | Skills | Projects | Certificates |
 |---|---|---|---|
 | <img src="Project UI/Light-1.png" width="200"> | <img src="Project UI/Light-2.png" width="200"> | <img src="Project UI/Light-3.png" width="200"> | <img src="Project UI/Light-4.png" width="200"> |
 
@@ -109,7 +109,7 @@ git clone https://github.com/RootSyntax-Dev/Portfolio.git
 cd Portfolio
 ```
 
-📁 Folder Structure
+# 📁 Folder Structure
 ```bash
 Portfolio/
 ├── index.html
@@ -121,11 +121,11 @@ Portfolio/
 └── Certificates/
 ```
 
-📬 Contact
-```bash
+# 📬 Contact
+
 💻 GitHub: https://github.com/RootSyntax-Dev
 🔗 LinkedIn: https://linkedin.com/in/vinay-py-dev
-```
+---
 
-```bash
-<p align="center"> <strong>Made with ❤️ by Vinay Shah</strong> <br> <em>© 2026 All Rights Reserved</em> </p> ```
+
+<p align="center"> <strong>Made with ❤️ by Vinay Shah</strong> <br> <em>© 2026 All Rights Reserved</em> </p>
